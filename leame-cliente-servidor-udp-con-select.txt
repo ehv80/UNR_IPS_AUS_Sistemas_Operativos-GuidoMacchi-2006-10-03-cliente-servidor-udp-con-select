@@ -1,0 +1,21 @@
+Instrucciones de uso:
+
+1º) Iniciar el servidor: ./servidor-udp-con-select.out
+
+2º) Iniciar el cliente: ./cliente-udp-con-select.out 127.0.0.1
+
+OPCIONAL: Puede iniciar otro cliente udp de la misma forma.
+
+3º) Desde cliente x  enviar mensaje al servidor e inmediatamente
+    desde servidor responder al cliente x.
+
+
+OPCIONAL: Si hubieran otros clientes iniciados, siempre que
+un cliente x envía, los demas clientes deben esperar a que 
+el servidor le responda, así se mantienen las comunicaciones
+mediante turnos. Si no se respeta, el servidor al responder
+siempre envía la respuesta al último cliente desde el cuál
+llegó el mensaje.
+
+4º Cerrar todos los procesos clientes con CTRL+C y el
+proceso servidor también.
